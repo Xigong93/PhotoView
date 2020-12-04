@@ -6,7 +6,7 @@ package com.github.chrisbanes.photoview;
  */
 public abstract class OnScaleChangedListener {
 
-    void onScaleStart() {
+    public void onScaleStart() {
     }
 
     /**
@@ -16,8 +16,8 @@ public abstract class OnScaleChangedListener {
      * @param focusX      focal point X position
      * @param focusY      focal point Y position
      */
-    abstract void onScaleChange(float scaleFactor, float focusX, float focusY);
+    public abstract void onScaleChange(float scaleFactor, float focusX, float focusY);
 
-    void onScaleEnd() {
+    public void onScaleEnd() {
     }
 }
